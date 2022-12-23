@@ -25,6 +25,11 @@
             return ($stament -> execute()) ? $stament->fetch() : false ;
         }
 
+        public function index (){
+            $stament = $this -> PDO -> prepare("SELECT * FROM username");
+            return ($stament -> execute()) ? $stament -> fetchAll() : false;
+        }
+
     }
 
 ?>
