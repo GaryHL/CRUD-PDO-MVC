@@ -18,6 +18,13 @@
             $stament -> bindParam(":nombre" , $nombre);
             return ($stament -> execute()) ? $this -> PDO -> lastInsertId() : false ;  
         } 
+
+        public function show ($id){
+            $stament = $this -> PDO -> prepare("SELECT * FROM username where id = :id limit 1");
+            $stament -> bindParam(":id", $id);
+            return ($stament -> execute()) ? $stament->fetch() : false ;
+        }
+
     }
 
 ?>
