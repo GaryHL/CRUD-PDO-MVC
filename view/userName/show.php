@@ -11,7 +11,7 @@ $date = $obj->show($_GET['id']);
 
 <h2 class="text-center">Registrer details</h2>
 <div class="pb-3">
-    <a href="/Crud-pdo-mvc/index.php" class="btn-primary btn">Regresar</a>
+    <a href="/crud-pdo-mvc/view/userName/index.php" class="btn-primary btn">Regresar</a>
     <a href="/view/userName/edit.php?id=<?= $date[0] ?>" class="btn-success btn">Actualizar</a>
     <!-- Button trigger modal -->
     <a  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar registro</a>
