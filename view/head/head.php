@@ -24,10 +24,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/usuario-pdo-mvc-poo/view/userName/index.php">Usuarios</a>
+                            <a class="nav-link active" aria-current="page" href="/crud-pdo-mvc/view/userName/index.php">Usuarios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/usuario-pdo-mvc-poo/view/userName/create.php">Agregar nuevos usuarios</a>
+                            <a class="nav-link active" aria-current="page" href="/crud-pdo-mvc/view/userName/create.php">Agregar nuevos usuarios</a>
                         </li>
                     </ul>
                 </div>
