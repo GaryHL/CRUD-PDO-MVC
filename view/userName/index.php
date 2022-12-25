@@ -53,7 +53,9 @@ $rows = $obj->index();
                 </tr>
             <?php endforeach; ?>
         <?php else : ?>
-
+            <tr>
+                <th colsapn="3" class="text-center">No hay registros</th>
+            </tr>
         <?php endif ?>
     </tbody>
 </table>
