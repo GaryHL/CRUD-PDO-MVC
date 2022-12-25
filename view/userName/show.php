@@ -28,8 +28,8 @@ $date = $obj->show($_GET['id']);
                     Una vez eliminado no se podrá recuperar el registro.
                 </div>
                 <div class="modal-footer">
-                    <a href="/view/userName/delete.php" class="btn btn-danger">Eliminar</a>
                     <a href="" class="btn btn-success" data-bs-dismiss="modal">Cerrar</a>
+                    <a href="/view/userName/delete.php?<?php $date['id']?>" class="btn btn-danger">Eliminar</a>
                 </div>
             </div>
         </div>
