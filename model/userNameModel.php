@@ -30,6 +30,15 @@
             return ($stament -> execute()) ? $stament -> fetchAll() : false;
         }
 
+        public function update ($id, $nombre){
+            $stament = $this -> PDO -> prepare( " UPDATE username set nombre = :nombre WHERE id = :id");
+            $stament -> bindParam(":nombre",$nombre);
+            $stament -> bindParam(":id",$id);
+
+            return ($stament -> execute()) ? $id : false ;
+
+        }
+
     }
 
 ?>
