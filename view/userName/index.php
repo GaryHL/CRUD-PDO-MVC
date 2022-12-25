@@ -44,7 +44,7 @@ $rows = $obj->index();
                                     </div>
                                     <div class="modal-footer">
                                         <a href="" class="btn btn-success" data-bs-dismiss="modal">Cerrar</a>
-                                        <a href="/view/userName/delete.php?<?php $date['id'] ?>" class="btn btn-danger">Eliminar</a>
+                                        <a href="/crud-pdo-mvc/view/userName/delete.php?id=<?= $row['id'] ?>" class="btn btn-danger">Eliminar</a>
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ $rows = $obj->index();
             <?php endforeach; ?>
         <?php else : ?>
             <tr>
-                <th colsapn="3" class="text-center">No hay registros</th>
+                <th colspan="3" class="text-center">Actualmente no hay registros</th>
             </tr>
         <?php endif ?>
     </tbody>

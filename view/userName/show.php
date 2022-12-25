@@ -12,7 +12,7 @@ $date = $obj->show($_GET['id']);
 <h2 class="text-center">Registrer details</h2>
 <div class="pb-3">
     <a href="/crud-pdo-mvc/view/userName/index.php" class="btn-primary btn">Regresar</a>
-    <a href="/view/userName/edit.php?id=<?= $date[0] ?>" class="btn-success btn">Actualizar</a>
+    <a href="/crud-pdo-mvc/view/userName/edit.php?id=<?= $date['id'] ?>" class="btn-success btn">Actualizar</a>
     <!-- Button trigger modal -->
     <a  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar registro</a>
 
@@ -29,7 +29,7 @@ $date = $obj->show($_GET['id']);
                 </div>
                 <div class="modal-footer">
                     <a href="" class="btn btn-success" data-bs-dismiss="modal">Cerrar</a>
-                    <a href="/view/userName/delete.php?<?php $date['id']?>" class="btn btn-danger">Eliminar</a>
+                    <a href="/crud-pdo-mvc/view/userName/delete.php?id=<?= $date['id']?>" class="btn btn-danger">Eliminar</a>
                 </div>
             </div>
         </div>
