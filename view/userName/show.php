@@ -9,7 +9,7 @@ $obj = new UserNameController();
 $date = $obj->show($_GET['id']);
 ?>
 
-<h2 class="text-center">Registrer details</h2>
+<h2 class="text-center">Detalles del registro</h2>
 <div class="pb-3">
     <a href="/crud-pdo-mvc/view/userName/index.php" class="btn-primary btn">Regresar</a>
     <a href="/crud-pdo-mvc/view/userName/edit.php?id=<?= $date['id'] ?>" class="btn-success btn">Actualizar</a>

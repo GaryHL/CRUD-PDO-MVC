@@ -7,10 +7,7 @@ $obj = new UserNameController();
 
 $rows = $obj->index();
 ?>
-
-<div class="mb-3">
-    <a href="/crud-pdo-mvc/view/userName/create.php" class="btn btn-primary">agregar nuevo usuario</a>
-</div>
+<h2 class="text-center py-3">Usuarios</h2>
 <table class="table">
     <thead>
         <tr>
@@ -59,6 +56,9 @@ $rows = $obj->index();
         <?php endif ?>
     </tbody>
 </table>
+<div class="py-3">
+    <a href="/crud-pdo-mvc/view/userName/create.php" class="btn btn-primary">agregar nuevo usuario</a>
+</div>
 
 
 
