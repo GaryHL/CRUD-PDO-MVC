@@ -34,6 +34,7 @@
         public function delete ($id){
             return ($this -> model -> delete($id)) ? header("Location:index.php") : header("Location:show.php?id=".$id); 
         }
+        
     }
 
 
