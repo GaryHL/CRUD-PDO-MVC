@@ -22,6 +22,12 @@ $user = $obj->show($_GET['id']);
             <input type="text" name="nombre" class="form-control" id="inputPassword" value="<?=$user['nombre']?>">
         </div>
     </div>
+    <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Apellido</label>
+        <div class="col-sm-10">
+            <input type="text" name="apellido" class="form-control" id="inputPassword" value="<?=$user['apellido']?>">
+        </div>
+    </div>
     <div class="">
         <input type="submit" value="actualizar" class="btn btn-success">
         <a class="btn btn-danger" href="show.php?id=<?= $user['id']?>">Cancelar</a>
