@@ -13,6 +13,7 @@ $rows = $obj->index();
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -22,6 +23,7 @@ $rows = $obj->index();
                 <tr>
                     <th><?= $row['id'] ?></th>
                     <th><?= $row['nombre'] ?></th>
+                    <th><?= $row['apellido'] ?></th>
                     <th>
                         <a href="/crud-pdo-mvc/view/userName/show.php?id=<?= $row['id'] ?>" class="btn btn-primary">Ver</a>
                         <a href="/crud-pdo-mvc/view/userName/edit.php?id=<?= $row['id'] ?>" class="btn btn-success">Modificar</a>
@@ -51,7 +53,7 @@ $rows = $obj->index();
             <?php endforeach; ?>
         <?php else : ?>
             <tr>
-                <th colspan="3" class="text-center">Actualmente no hay registros</th>
+                <th colspan="4" class="text-center">Actualmente no hay registros</th>
             </tr>
         <?php endif ?>
     </tbody>

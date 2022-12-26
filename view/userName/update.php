@@ -4,6 +4,6 @@
 
     $obj = new UserNameController();
 
-    $obj -> update($_POST['id'],$_POST['nombre'])
+    $obj -> update($_POST['id'],$_POST['nombre'],$_POST['apellido'])
 
 ?>

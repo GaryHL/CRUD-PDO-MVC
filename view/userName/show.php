@@ -41,12 +41,14 @@ $date = $obj->show($_GET['id']);
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td scope="col"><?= $date[0] ?></td>
-            <td scope="col"><?php echo $date[1] ?></td>
+            <td scope="col"><?= $date['id'] ?></td>
+            <td scope="col"><?php echo $date['nombre'] ?></td>
+            <td scope="col"><?= $date['apellido'] ?></td>
         </tr>
     </tbody>
 </table>
